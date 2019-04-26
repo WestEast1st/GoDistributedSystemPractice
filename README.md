@@ -1,0 +1,2 @@
+# GoDistributedSystemPractice
+分散システムと柔軟なデータ処理の練習用
