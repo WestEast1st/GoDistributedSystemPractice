@@ -16,3 +16,21 @@ nsqd --lookupd-tcp-address=localhost:4160
 ```
 mongod --dbpath .db
 ```
+## mongo
+mongoDBのコンソールを起動
+```
+mongo
+```
+
+ballotsを選択
+```
+use ballots
+```
+調査項目をinsert
+```
+db.polls.insert({"title":"今日の気分は?","options":["happy","sad","fail","win"]}}
+```
+## nsqのメッセージを出力
+```
+nsq_tail --topic="votes" --lookupd-http-address=localhost:4161
+```
